@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+    
+    // Comment these lines to get the 'correct' blue header color on presentMessenger
+    [appearance configureWithOpaqueBackground];
+    [[UINavigationBar appearance] setStandardAppearance:appearance];
+    
     return YES;
 }
 

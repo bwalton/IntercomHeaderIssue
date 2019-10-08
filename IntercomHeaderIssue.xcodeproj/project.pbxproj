@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641A185A93235CD40153FDDD /* Pods_IntercomHeaderIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA8B904A74AA862DE48EA2A /* Pods_IntercomHeaderIssue.framework */; };
 		D339ECB3234D2C440052D41A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D339ECB2234D2C440052D41A /* AppDelegate.m */; };
 		D339ECB6234D2C440052D41A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D339ECB5234D2C440052D41A /* SceneDelegate.m */; };
 		D339ECB9234D2C440052D41A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D339ECB8234D2C440052D41A /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA8B904A74AA862DE48EA2A /* Pods_IntercomHeaderIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntercomHeaderIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2D7606E91DDEE38532CFB0 /* Pods-IntercomHeaderIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercomHeaderIssue.release.xcconfig"; path = "Target Support Files/Pods-IntercomHeaderIssue/Pods-IntercomHeaderIssue.release.xcconfig"; sourceTree = "<group>"; };
 		D339ECAE234D2C440052D41A /* IntercomHeaderIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntercomHeaderIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D339ECB1234D2C440052D41A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D339ECB2234D2C440052D41A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		D339ECC0234D2C440052D41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D339ECC2234D2C440052D41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D339ECC3234D2C440052D41A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECDD9629D6A7BC6AA98D5352 /* Pods-IntercomHeaderIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntercomHeaderIssue.debug.xcconfig"; path = "Target Support Files/Pods-IntercomHeaderIssue/Pods-IntercomHeaderIssue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641A185A93235CD40153FDDD /* Pods_IntercomHeaderIssue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961693176558752EC1502E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA8B904A74AA862DE48EA2A /* Pods_IntercomHeaderIssue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D339ECA5234D2C440052D41A = {
 			isa = PBXGroup;
 			children = (
 				D339ECB0234D2C440052D41A /* IntercomHeaderIssue */,
 				D339ECAF234D2C440052D41A /* Products */,
+				E7EB5628E9C05DCC233BF6B1 /* Pods */,
+				961693176558752EC1502E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = IntercomHeaderIssue;
 			sourceTree = "<group>";
 		};
+		E7EB5628E9C05DCC233BF6B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECDD9629D6A7BC6AA98D5352 /* Pods-IntercomHeaderIssue.debug.xcconfig */,
+				CD2D7606E91DDEE38532CFB0 /* Pods-IntercomHeaderIssue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D339ECC7234D2C440052D41A /* Build configuration list for PBXNativeTarget "IntercomHeaderIssue" */;
 			buildPhases = (
+				318941D574AF55793D1E880E /* [CP] Check Pods Manifest.lock */,
 				D339ECAA234D2C440052D41A /* Sources */,
 				D339ECAB234D2C440052D41A /* Frameworks */,
 				D339ECAC234D2C440052D41A /* Resources */,
+				37B0596ED60E300589A352D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318941D574AF55793D1E880E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntercomHeaderIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37B0596ED60E300589A352D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntercomHeaderIssue/Pods-IntercomHeaderIssue-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntercomHeaderIssue/Pods-IntercomHeaderIssue-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntercomHeaderIssue/Pods-IntercomHeaderIssue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D339ECAA234D2C440052D41A /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		D339ECC8234D2C440052D41A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDD9629D6A7BC6AA98D5352 /* Pods-IntercomHeaderIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		D339ECC9234D2C440052D41A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2D7606E91DDEE38532CFB0 /* Pods-IntercomHeaderIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

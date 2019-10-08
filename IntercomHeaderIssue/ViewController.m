@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Intercom/Intercom.h>
 
 @interface ViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openIntercom:)];
+    [self.view addGestureRecognizer:tap];
 }
 
+- (void)openIntercom:(UITapGestureRecognizer *)recognizer  {
+    [Intercom presentMessenger];
+}
 
 @end
